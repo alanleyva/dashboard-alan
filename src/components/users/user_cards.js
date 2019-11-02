@@ -10,7 +10,7 @@ export const Users = () => (
     <UserCard
       image="https://pbs.twimg.com/profile_images/1099856449918943232/hKv3Fddh.jpg"
       name="Diogo Lima"
-      title="Insurance Agent"
+      title="Architect"
     />
     <UserCard
       image="https://images.unsplash.com/photo-1476493279419-b785d41e38d8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=61eaea85f1aa3d065400179c78163f15"
