@@ -30,7 +30,7 @@ class TopNav extends Component {
                 <div className="input-group input-group-search">
                   <div className="input-group-prepend">
                     <span className="input-group-text">
-                      <span className="oi oi-magnifying-glass"></span>
+                      <span className="fas fa-search  "></span>
                     </span>
                   </div>
                   <input
@@ -44,14 +44,6 @@ class TopNav extends Component {
             </div>
 
             <div className="top-bar-item top-bar-item-right px-0 d-none d-sm-flex">
-              <ul className="header-nav nav">
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    <span className="oi oi-grid-three-up"></span>
-                  </a>
-                </li>
-              </ul>
-
               <div className="dropdown">
                 <button
                   className="btn-account d-none d-md-flex"
@@ -76,21 +68,11 @@ class TopNav extends Component {
                     John Doe
                   </h6>
                   <a className="dropdown-item" href="#">
-                    <span className="dropdown-icon oi oi-person"></span> Profile
+                    <span className="dropdown-icon fas fa-user"></span> Profile
                   </a>
                   <a className="dropdown-item" href="#">
-                    <span className="dropdown-icon oi oi-account-logout"></span>{" "}
+                    <span className="dropdown-icon fas fa-sign-out-alt"></span>{" "}
                     Logout
-                  </a>
-                  <div className="dropdown-divider"></div>
-                  <a className="dropdown-item" href="#">
-                    Help Center
-                  </a>
-                  <a className="dropdown-item" href="#">
-                    Ask Forum
-                  </a>
-                  <a className="dropdown-item" href="#">
-                    Keyboard Shortcuts
                   </a>
                 </div>
               </div>

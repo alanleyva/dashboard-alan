@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 var menu_items = {
-  Dashboard: { icon: "fas fa-home" },
-  Users: { icon: "fas fa-user" },
-  Tasks: { icon: "fas fa-tasks" },
-  Contacts: { icon: "fas fa-users" },
-  Proyects: { icon: "fas fa-project-diagram" }
+  Dashboard: { link: "/", icon: "fas fa-home" },
+  Users: { link: "users", icon: "fas fa-user" },
+  Tasks: { link: "tasks", icon: "fas fa-tasks" },
+  Contacts: { link: "contacts", icon: "fas fa-users" },
+  Proyects: { link: "proyects", icon: "fas fa-project-diagram" }
 };
 
 function menuItems() {
@@ -13,10 +14,10 @@ function menuItems() {
   Object.keys(menu_items).map(item => {
     let itemBlock = (
       <li className="menu-item" key={`m_item_${item}`}>
-        <a href="index.html" className="menu-link">
+        <Link to={menu_items[item].link} className="menu-link">
           <span className={`menu-icon ${menu_items[item].icon}`}></span>{" "}
           <span className="menu-text">{item}</span>
-        </a>
+        </Link>
       </li>
     );
     items.push(itemBlock);

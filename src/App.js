@@ -11,6 +11,7 @@ import "./css/app.css";
 import Header from "./components/header";
 // import Footer from "./components/footer";
 import Main from "./components/main";
+import { Users } from "./components/users/";
 import ScrollToTop from "./middleware/scrollTop";
 import * as serviceWorker from "./serviceWorker";
 
@@ -22,6 +23,7 @@ function App() {
           <Header />
           <main className="app-main">
             <Route exact path="/" component={Main} />
+            <Route exact path="/users" component={Users} />
           </main>
         </div>
       </ScrollToTop>

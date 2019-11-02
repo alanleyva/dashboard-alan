@@ -1,10 +1,14 @@
 import React from "react";
+import { initial } from "../../middleware/text_functions";
 
 export const Projects = () => (
   <div className="lits-group list-group-flush">
-    <ListItem name="Client 1 Webiste" rank={Math.floor(Math.random() * 100)} />
-    <ListItem name="Client 2 Webiste" rank={Math.floor(Math.random() * 100)} />
-    <ListItem name="Client 3 Website" rank={Math.floor(Math.random() * 100)} />
+    <ListItem
+      name="Groovestreet Webiste"
+      rank={Math.floor(Math.random() * 100)}
+    />
+    <ListItem name="Plusstrip Webiste" rank={Math.floor(Math.random() * 100)} />
+    <ListItem name="Sumace Website" rank={Math.floor(Math.random() * 100)} />
   </div>
 );
 
@@ -54,14 +58,4 @@ function barColor(range) {
       break;
   }
   return color;
-}
-
-function initial(text) {
-  text = text.split(" ");
-  if (text.length > 1) {
-    var newText = text[0][0] + text[1][0];
-  } else {
-    newText = text[0][0] + text[0][1];
-  }
-  return newText.toLocaleUpperCase();
 }
