@@ -8,9 +8,10 @@ export const Users = () => (
       title="Users"
       description="All your current users"
       parent="Dashboard"
+      button_txt="New user"
       link="/"
     />
-    <div className="card-deck">
+    <div className="row">
       <UserCard
         name="Rosamond Mueller"
         title="Accountant"

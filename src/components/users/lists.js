@@ -20,20 +20,22 @@ var ListItem = props => (
 );
 
 export const UserCard = props => (
-  <div className="card card-fluid">
-    <div className="card-body text-center">
-      <a href="user-profile.html" className="user-avatar user-avatar-xl my-3">
-        <img src={props.image} alt="" />
-      </a>
-      <h3 className="card-title text-truncate">
-        <a href="user-profile.html">{props.name}</a>
-      </h3>
-      <h6 className="card-subtitle text-muted mb-3">{props.title}</h6>
-      <p>
-        <a href="#" className="btn btn-primary circle">
-          View Profile <i className="fa fa-arrow-right ml-2"></i>
+  <div className="col-md-3 col-sm-6">
+    <div className="card card-fluid ">
+      <div className="card-body text-center">
+        <a href="user-profile.html" className="user-avatar user-avatar-xl my-3">
+          <img src={props.image} alt="" />
         </a>
-      </p>
+        <h3 className="card-title text-truncate">
+          <a href="user-profile.html">{props.name}</a>
+        </h3>
+        <h6 className="card-subtitle text-muted mb-3">{props.title}</h6>
+        <p>
+          <a href="#" className="btn btn-primary circle">
+            View Profile <i className="fa fa-arrow-right ml-2"></i>
+          </a>
+        </p>
+      </div>
     </div>
   </div>
 );
